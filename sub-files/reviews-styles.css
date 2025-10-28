@@ -1,0 +1,255 @@
+body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top right, lightblue, navy);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #222;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    width: 50%;
+    border-radius: 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85); 
+  backdrop-filter: blur(10px);           
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#write-review-button {
+    padding: 8px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+#bottom-nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+    width: fit-content;
+}
+
+#publish-button {
+  background: rgb(103, 28, 207);
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(57, 69, 230, 0.3);
+  margin-top: 25px;
+}
+
+#publish-button:hover {
+  background: #8d28d6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(172, 57, 230, 0.4);
+}
+
+#cancel-button {
+  background: rgb(187, 185, 188);
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(29, 29, 29, 0.3);
+  margin-top: 25px;
+}
+
+#cancel-button:hover {
+  background: #a5a4a6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(80, 80, 81, 0.4);
+}
+
+#write-review-container {
+    width: 40vw;
+    background-color: white;
+    border: 2px solid #555;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#no-reviews-to-show-h2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+#back2homepage {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin-left: 16px;
+}
+
+input[type="text"] {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid navy;
+    margin-bottom: 10px;
+    height: 50%;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: 3px solid skyblue;
+}
+
+#author {
+    width: 40%;
+}
+
+#title {
+    width: 80%;
+}
+
+#review {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 0;
+    resize: none;
+}
+
+.bottom-navEl {
+    color: #111;
+    text-decoration: none;
+}
+
+#average-rating-container {
+    margin-bottom: 20px;
+}
+
+.large-star {
+    font-size: 2rem;
+}
+
+.review-container {
+    text-align: left;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    background: #f0f2f5;
+  backdrop-filter: blur(5px);
+    margin-bottom: 20px;
+  transition:  transform 0.3s ease;
+}
+
+.review-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-title {
+    font-size: 1.2rem;
+  font-weight: 700;
+  color: #002b5b; 
+  margin-bottom: 0.5rem;
+}
+
+.review-review {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-weight: 600;
+  color: #004b8d; 
+  margin-bottom: 0.75rem;
+}
+
+
+.space-between {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    place-items: left;
+}
+
+.space-between-label {
+    place-self: left;
+    align-self: center;
+}
+
+.title-and-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star {
+    cursor: pointer;
+}
+
+.fa-solid.fa-star {
+    color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .card {
+        width: fit-content;
+        max-width: 80%;
+        margin: 100px 0;
+    }
+    
+    .title-and-date {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        margin: 0;
+    }
+    .card {
+        max-width: 100vw;
+        width: fit-content;
+        margin: 100px 0;
+        border-radius: 0;
+    }
+    
+    .title-and-date {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact-styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Contact Us</h1>
+      <div id="socials-form-container">
+        <div id="socials-container">
+          <h2 class="mb-40">Over Socials</h2>
+          <div id="socials-sub-container">
+            <span class="icon-span"
+              >Github
+              <a class="logo-button github"><i class="logo fa-brands fa-github"></i></a
+            ></span>
+            <span class="icon-span"
+              >Youtube
+              <a class="logo-button"
+                ><i class="logo fa-brands fa-youtube"></i></a
+            ></span>
+            <span class="icon-span"
+              >Instagram
+              <a class="logo-button"
+                ><i class="logo fa-brands fa-instagram"></i></a
+            ></span>
+            <span class="icon-span"
+              >Facebook
+              <a class="logo-button"
+                ><i class="logo fa-brands fa-facebook"></i></a
+            ></span>
+            <span class="icon-span"
+              >Whatsapp
+              <a class="logo-button"
+                ><i class="logo fa-brands fa-whatsapp"></i></a
+            ></span>
+            <span class="icon-span"
+              >Google
+              <a class="logo-button"><i class="logo fa-brands fa-google"></i></a
+            ></span>
+          </div>
+        </div>
+        <div id="form">
+          <h2>Via Email</h2>
+          <div id="form-sub-container">
+            <div class="form-el-container">
+              <label for="name">Full Name:</label
+              ><input
+                type="text"
+                name="full_name"
+                id="name"
+                minlength="3"
+                maxlength="30"
+                placeholder="John Smith"
+              /><br />
+            </div>
+            <div class="form-el-container">
+              <label for="email">Email:</label
+              ><input
+                type="email"
+                name="email"
+                id="email"
+                minlength="3"
+                maxlength="40"
+                placeholder="example@example.com"
+              /><br />
+            </div>
+                <label for="message">
+                  Message:
+                  <textarea name="message" id="message" rows="5"></textarea>
+                </label>
+          </div>
+          <button id="cta">Send</button>
+        </div>
+      </div>
+    </div>
+    <a id="back2homepage" href="../index.html"><i class="fa-solid fa-arrow-left arrow-right"></i> Back to Homepage</a>
+    <script
+      src="https://kit.fontawesome.com/d7b31dde95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="contact-script.js"></script>
+  </body>
+</html>
+

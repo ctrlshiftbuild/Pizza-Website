@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="menu-styles.css">
+</head>
+<body>
+    <div id="main-display">
+        <h1>Menu</h1>
+        <hr>
+        <div id="filter-sortby-container">
+            <label for="filter">filter: <select name="filter" id="filter">
+                <option value="All" selected>All</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Pasta & Lasagna">Pasta & Lasagna</option>
+                <option value="Sides">Sides</option>
+                <option value="Warm-Drinks">Warm Drinks</option>
+                <option value="Cold-Drinks">Cold Drinks</option>
+            </select>
+            </label>
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <label for="sortby">sort by: <select name="sortby" id="sortby">
+                <option value="priceAsc">Price (Ascending)</option>
+                <option value="priceDes">Price (Descending)</option>
+                <option value="category" selected>Category</option>
+                <option value="atoz">A-Z</option>
+                <option value="ztoa">Z-A</option>
+            </select>
+            </label>
+        </div>
+        <div id="products-container"></div>
+        <hr>
+    </div>
+    <div class="add-animation">
+        <div id="check-wrap"><i class="fa-solid fa-check check"></i></div>
+        <h1>Successfully added Item to Cart</h1>
+    </div>
+    <a class="cart-button" href="cart.html">
+        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+    </a>
+    <a id="back2homepage" href="../index.html"><i class="fa-solid fa-arrow-left arrow-right"></i> Back to Homepage</a>
+    <script
+      src="https://kit.fontawesome.com/d7b31dde95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu-script.js" type="module"></script>
+</body>
+</html>

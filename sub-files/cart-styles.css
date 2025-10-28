@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top right, lightblue, navy);
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 50%;
+    border-radius: 16px;
+    margin: 100px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 16px;
+    background-color: white;
+}
+
+#products-in-cart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-summary-container {
+    display: grid;
+    grid-template-columns: 45% 35% 20%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 20px rgba(7, 42, 125, 0.263);
+    border-radius: 16px;
+}
+
+.delete-button {
+    width: fit-content;
+    place-self: center;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid rgb(162, 22, 22);
+    background-color: transparent;
+    color: rgb(162, 22, 22);
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.delete-button:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+#cta {
+    background: rgb(103, 28, 207);
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(57, 69, 230, 0.3);
+  margin-top: 25px;
+}
+
+#cta:hover {
+  background: #8d28d6;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(172, 57, 230, 0.4);
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .card {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .card {
+        width: 80%;
+        border-radius: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .product-summary-container {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+    }
+}

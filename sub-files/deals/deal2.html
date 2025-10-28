@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal - Meal Deal</title>
+    <link rel="stylesheet" href="deal2-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="card">
+        <div class="image-container">
+            <img src="../../images/deal2-img.png" alt="an image of a product" id="product-img">
+        </div>
+        <div id="product-content">
+            <h1 id="product-title">Meal Deal</h1>
+            <p id="product-desc">This combo includes a small Pizza, a side, and a softdrink of choice.</p><br>
+            <hr>
+            <h2>Pizza</h2>
+            <div class="item-selection">
+                <select name="pizza" id="pizza">
+                    <option value="Pizza-Diavola">Pizza Diavola</option>
+                    <option value="Pizza-Funghi">Pizza-Funghi</option>
+                    <option value="Pizza-Hawaiian">Pizza Hawaiian</option>
+                    <option value="Pizza-Margherita" selected>Pizza Margherita</option>
+                    <option value="Pizza-Napoletana">Pizza-Napoletana</option>
+                    <option value="Pizza-Regina">Pizza-Regina</option>
+                    <option value="Pizza-Capricciosa">Pizza Capricciosa</option>
+                    <option value="Pizza-Vegetariana">Pizza Vegetariana</option>
+                    <option value="Pizza-Prosciutto-e-Rucola">Pizza Prosciutto e Rucola</option>
+                    <option value="Pizza-Quattro-Formaggi">Pizza Quattro Formaggi</option>
+                </select>
+            </div>
+            <hr>
+            <h2>Side</h2>
+            <div class="item-selection">
+                <select name="side" id="side">
+                    <option value="Garlic-Bread">Garlic Bread</option>
+                    <option value="Mozzarella-Sticks">Mozzarella Sticks</option>
+                    <option value="Fries" selected>Fries</option>
+                    <option value="Sweet-Potato-Fries" selected>Sweet Potato Fries</option>
+                    <option value="Brushetta">Brushetta</option>
+                </select>
+            </div>
+            <hr>
+            <h2>Softdrink</h2>
+            <div class="item-selection">
+                <select name="drink" id="drink">
+                    <option value="Coke" selected>Coke</option>
+                    <option value="Fanta">Fanta</option>
+                    <option value="Coke-Zero">Coke Zero</option>
+                </select>
+            </div>
+            <hr>
+            <div id="cta-container"><button id="cta">Add to Order</button></div>
+        </div>
+    </div>  
+    <a id="back2homepage" href="../../index.html"><i class="fa-solid fa-arrow-left arrow-right"></i> Back to Homepage</a>
+    <script
+      src="https://kit.fontawesome.com/d7b31dde95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="deal2-script.js"></script>
+</body>
+</html>

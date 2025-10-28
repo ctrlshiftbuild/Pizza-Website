@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews</title>
+    <link rel="stylesheet" href="reviews-styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Reviews</h1>
+      <hr>
+      <div id="controls-and-average-rating">
+        <h2>Average Rating: </h2>
+        <div id="average-rating-container"></div>
+      </div>
+      <hr id="top-hr" />
+      <div id="reviews"></div>
+      <hr />
+      <div id="bottom-nav">
+        <a href="../index.html" class="bottom-navEl">Home</a>
+        <a href="menu.html" class="bottom-navEl">Menu</a>
+        <a href="cart.html" class="bottom-navEl">Order</a>
+        <a href="contact.html" class="bottom-navEl">Contact</a>
+      </div>
+    </div>
+    <dialog id="dialog">
+      <div id="form-container">
+        <form id="write-review-container" method="dialog">
+          <h2>Write a Review</h2>
+          <div class="space-between">
+            <label for="author" class="space-between-label">Author name: </label
+            ><input type="text" name="author" id="author" required />
+          </div>
+          <div class="space-between">
+            <label for="title" class="space-between-label">Title:</label>
+            <input type="text" name="title" id="title" required />
+          </div>
+          <label for="review">Review: </label>
+          <textarea name="review" id="review" rows="8" required></textarea>
+          <div>
+            Rating:
+            <i class="fa-regular fa-star star form-star star1"></i>
+            <i class="fa-regular fa-star star form-star star2"></i>
+            <i class="fa-regular fa-star star form-star star3"></i>
+            <i class="fa-regular fa-star star form-star star4"></i>
+            <i class="fa-regular fa-star star form-star star5"></i>
+          </div>
+          <div id="button-container">
+            <button id="cancel-button">Cancel</button>
+            <button id="publish-button">Publish</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+    <button id="write-review-button">
+          <i class="fa-solid fa-pen-to-square"></i> Write a Review
+    </button>
+    <a id="back2homepage" href="../index.html"><i class="fa-solid fa-arrow-left arrow-right"></i> Back to Homepage</a>
+    <script
+      src="https://kit.fontawesome.com/d7b31dde95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="reviews-script.js"></script>
+  </body>
+</html>
