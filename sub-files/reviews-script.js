@@ -7,8 +7,6 @@ const writeReviewButton = document.getElementById("write-review-button");
 const averageRatingContainer = document.getElementById("average-rating-container");
 const topHR = document.getElementById("top-hr");
 
-displayReviews();
-
 let clickedStar = null;
 let averageRating = 0;
 let averageRatingRounded = 0;
@@ -37,6 +35,7 @@ function checkForReviews() {
 
 checkForReviews();
 displayAverageStars();
+displayReviews();
 
 writeReviewButton.addEventListener("click", () => {
     
